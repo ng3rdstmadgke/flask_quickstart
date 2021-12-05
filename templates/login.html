@@ -1,0 +1,8 @@
+{% if error %}
+<p style="font-size: bold;">{{error}}</p>
+{% endif %}
+<form action="{{url_for('login_1')}}" method="POST">
+  <input type="text" name="username" placeholder="username">
+  <input type="password" name="password" placeholder="password">
+  <input type="submit" value="login">
+</from>
